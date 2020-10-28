@@ -1,0 +1,30 @@
+{
+  "name": "recoil-outside",
+  "version": "0.1.0",
+  "description": "It is a package of react to set or get on recoilJS from outside of a component.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VeepCream/recoil-outside.git"
+  },
+  "author": "Veerapat Preechapant <dev.mobile.veep@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "recoil",
+    "outside"
+  ],
+  "bugs": {
+    "url": "https://github.com/VeepCream/recoil-outside/issues"
+  },
+  "homepage": "https://github.com/VeepCream/recoil-outside#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

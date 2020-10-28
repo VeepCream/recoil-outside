@@ -1,0 +1,43 @@
+diff --git a/node_modules/recoil/dist/index.js b/node_modules/recoil/dist/index.js
+index 06d3b46..30bc725 100644
+--- a/node_modules/recoil/dist/index.js
++++ b/node_modules/recoil/dist/index.js
+@@ -11,8 +11,10 @@
+ 
+ 'use strict';
+ 
+-if (process.env.NODE_ENV === 'production') { // @oss-only
+-  module.exports = require('./recoil.production.js'); // @oss-only
+-} else { // @oss-only
+-  module.exports = require('./recoil.development.js'); // @oss-only
+-} // @oss-only
++// if (process.env.NODE_ENV === 'production') { // @oss-only
++//   module.exports = require('./recoil.production.js'); // @oss-only
++// } else { // @oss-only
++//   module.exports = require('./recoil.development.js'); // @oss-only
++// } // @oss-only
++
++module.exports = require('./recoil.development.js'); // @oss-only
+diff --git a/node_modules/recoil/dist/recoil.development.js b/node_modules/recoil/dist/recoil.development.js
+index 90321c4..e0506e9 100644
+--- a/node_modules/recoil/dist/recoil.development.js
++++ b/node_modules/recoil/dist/recoil.development.js
+@@ -5,7 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
+ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+ 
+ var react = _interopDefault(require('react'));
+-var reactDom = _interopDefault(require('react-dom'));
++var reactDom = _interopDefault(require('react-native'));
+ 
+ /**
+  * Copyright (c) Facebook, Inc. and its affiliates.
+@@ -188,7 +188,8 @@ function registerNode(node) {
+     // prettier-ignore
+     // @fb-only: } else {
+ 
+-    Recoil_recoverableViolation(message); // @fb-only: }
++    console.warn(message) // RN exception manager is somehow broken with recoil
++    // Recoil_recoverableViolation(message); // @fb-only: }
+   }
+ 
+   nodes.set(node.key, node);
