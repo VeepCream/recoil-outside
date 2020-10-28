@@ -12,9 +12,6 @@
   "dependencies": {
     "rxjs": "^6.6.3"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "keywords": [
     "recoil",
     "outside"
