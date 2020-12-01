@@ -1,6 +1,6 @@
 {
   "name": "recoil-outside",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "It is a package of react to set or get on recoilJS from outside of a component.",
   "main": "index.js",
   "repository": {
